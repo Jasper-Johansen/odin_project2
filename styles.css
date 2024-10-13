@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+}
+
+body {
+    background-color: #000; /* Dark space theme */
+    color: #fff; /* Text color */
+}
+
+.container {
+    display: flex;
+    height: 100%; /* Full height */
+}
+
+.image-container {
+    position: relative; /* Make the container a positioning context */
+    width: 50%; /* Adjust width as needed */
+    height: 100%; /* Full height */
+}
+
+.overlay {
+    position: absolute;
+    top: 10px; /* Position from the top */
+    left: 10px; /* Position from the left */
+    color: white; /* Text color */
+    text-align: center; /* Align text to the left */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px; /* Optional: Rounded corners */
+}
+
+.logo {
+    width: 100px; /* Adjust logo size as needed */
+    margin-bottom: 5px; /* Space below logo */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image covers the area */
+}
+
+.form-container {
+    width: 50%; /* Adjust width as needed */
+    display: flex;
+    padding-top:30px;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Full height */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for the form */
+    border-radius: 5px; /* Rounded corners */
+    width: 80%; /* Width of the fieldset */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px; /* Add padding for input */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+legend {
+    font-size: 1.5em; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    background-color: #007BFF; /* Background color */
+    color: white; /* Text color */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the text */
+    width: calc(100% - 20px); /* Full width minus padding */
+}
